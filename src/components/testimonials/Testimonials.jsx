@@ -9,14 +9,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Loading from "./Loading";
 
 const Testimonials = () => {
   const url = "https://myportfolio-r9dm.onrender.com/myPortfolio/";
   const [data, setData] = useState([]);
+  const [loading,setLoading]=useState(true);
 
   const fetchInfo = async () => {
     const res = await fetch(url);
     const d = await res.json();
+    setLoading(false);
     return setData(d);
   };
 
@@ -28,7 +31,7 @@ const Testimonials = () => {
     <section id="testimonials">
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
-
+      {loading?<Loading/>:
       <Swiper
         className="container testimonials__container"
         modules={[Pagination]}
@@ -58,46 +61,7 @@ const Testimonials = () => {
               </SwiperSlide>
             );
           })}
-        {/* <SwiperSlide className="testimonial">
-                    <div className="client__avatar">
-                        <img src={AVTR1} alt="Friend1" />
-
-                    </div>
-                    <h5 className='client__name'>Ernest Achiever</h5>
-                    <small className="client__review">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa velit a minima beatae dolorum! Nobis distinctio perspiciatis, deserunt architecto doloribus impedit labore. Eius minus magnam veniam repellendus enim qui!
-                    </small>
-                </SwiperSlide>
-                <SwiperSlide className="testimonial">
-                    <div className="client__avatar">
-                        <img src={AVTR2} alt="Friend2" />
-                    </div>
-                    <h5 className='client__name'>Ernest Achiever</h5>
-                    <small className="client__review">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa velit a minima beatae dolorum! Nobis distinctio perspiciatis, deserunt architecto doloribus impedit labore. Eius minus magnam veniam repellendus enim qui!
-                    </small>
-                </SwiperSlide>
-                <SwiperSlide className="testimonial">
-                    <div className="client__avatar">
-                        <img src={AVTR3} alt="Friend3" />
-
-                    </div>
-                    <h5 className='client__name'>Ernest Achiever</h5>
-                    <small className="client__review">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa velit a minima beatae dolorum! Nobis distinctio perspiciatis, deserunt architecto doloribus impedit labore. Eius minus magnam veniam repellendus enim qui!
-                    </small>
-                </SwiperSlide>
-                <SwiperSlide className="testimonial">
-                    <div className="client__avatar">
-                        <img src={AVTR4} alt="Friend4" />
-
-                    </div>
-                    <h5 className='client__name'>Ernest Achiever</h5>
-                    <small className="client__review">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa velit a minima beatae dolorum! Nobis distinctio perspiciatis, deserunt architecto doloribus impedit labore. Eius minus magnam veniam repellendus enim qui!
-                    </small>
-                </SwiperSlide> */}
-      </Swiper>
+      </Swiper>}
     </section>
   );
 };
