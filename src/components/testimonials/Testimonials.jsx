@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Testimonials.css";
 
 import { Pagination } from "swiper/modules";
@@ -11,21 +11,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Loading from "./Loading";
 
-const Testimonials = () => {
-  const url = "https://myportfolio-r9dm.onrender.com/myPortfolio/";
-  const [data, setData] = useState([]);
-  const [loading,setLoading]=useState(true);
+const Testimonials = ({data,loading}) => {
+  // const url = "https://myportfolio-r9dm.onrender.com/myPortfolio/";
+  // const [data, setData] = useState([]);
+  // const [loading,setLoading]=useState(true);
 
-  const fetchInfo = async () => {
-    const res = await fetch(url);
-    const d = await res.json();
-    setLoading(false);
-    return setData(d);
-  };
+  // const fetchInfo = async () => {
+  //   const res = await fetch(url);
+  //   const d = await res.json();
+  //   setLoading(false);
+  //   return setData(d);
+  // };
 
-  useEffect(() => {
-    fetchInfo();
-  }, []);
+  // useEffect(() => {
+  //   fetchInfo();
+  // }, []);
 
   return (
     <section id="testimonials">

@@ -32,7 +32,7 @@ const App = () => {
             <Experiences />
             <Services />
             <Portfolio data={data} loading={loading}/>
-            <Testimonials />
+            <Testimonials data={data} loading={loading}/>
             <Contact />
             <Footer />
         </>
