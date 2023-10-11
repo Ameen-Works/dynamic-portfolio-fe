@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
 import Loading from "./Loading";
 
-const Portfolio = () => {
-  const url = "https://myportfolio-r9dm.onrender.com/myPortfolio/";
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
+const Portfolio = ({ data, loading }) => {
+  // const url = "https://myportfolio-r9dm.onrender.com/myPortfolio/";
+  // const [loading, setLoading] = useState(true);
+  // const [data, setData] = useState([]);
 
-  const fetchInfo = async () => {
-    const res = await fetch(url);
-    const d = await res.json();
-    setLoading(false);
-    return setData(d);
-  };
+  // const fetchInfo = async () => {
+  //   const res = await fetch(url);
+  //   const d = await res.json();
+  //   setLoading(false);
+  //   return setData(d);
+  // };
 
-  useEffect(() => {
-    fetchInfo();
-  }, []);
+  // useEffect(() => {
+  //   fetchInfo();
+  // }, []);
   return (
     <section id="portfolio">
       <h5>My Works</h5>
