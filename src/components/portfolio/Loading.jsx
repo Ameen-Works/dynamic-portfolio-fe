@@ -4,7 +4,7 @@ import "./Loading.css"; // Import your CSS file
 function Loading() {
   return (
     <div className="loading">
-      <div className="loading-text">X</div>
+      <div className="loading-text"></div>
     </div>
   );
 }
