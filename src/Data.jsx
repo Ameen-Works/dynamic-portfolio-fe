@@ -1,7 +1,8 @@
 export const data = [
   {
     testimonial: {
-      testimonial_image: "./assets/avatar1.jpeg",
+      testimonial_image:
+        "https://lh3.googleusercontent.com/pw/ABLVV85O_VBc1ShM5lFCvGKsMHisfEtmLeti4d4Frj11KhL5dd6dtqi6EwpqT-tImQYmOq0ZSapXvnDDr7VMIjrGh9wF3znc8uO9rQr4K90UkY2dm7zHcyL27E5uhQq15pmRGmLNpsU_ct0Qrs4FvQWot_0Jyw=w100-h100-s-no-gm?authuser=0",
       provider_name: "Aminur Rahman",
       review:
         "I have known ARSHATH AMEEN for over 3 years now. His knowledge in the technology is exceptional. He is still my go to person for advice related to technology. His positive attitude and appetite for learning is what sets him apart. I would highly recommend ARSHATH AMEEN",
@@ -11,7 +12,8 @@ export const data = [
   },
   {
     testimonial: {
-      testimonial_image: "./assets/avatar4.jpeg",
+      testimonial_image:
+        "https://lh3.googleusercontent.com/pw/ADCreHf6mVepD3dw8p8PN5Jsr7XHwSn0bdwP5sA84ZhR0AaL90T4N_je5KOD2Vc6DlH2TZJjzIef-3xxNPSbc5JlNYu4v-6MYVL3I4EXrbjoihbHX0r7TRFCvZEmAzJPhnHghlttt16rQZK7j4BA-CQEseyX3A=w100-h100-s-no-gm?authuser=0",
       provider_name: "Guru Anantha Raman S",
       review:
         "Mr.Mohamed Arshath Ameen is my Junior in college. He is so much interested in designing and invention new products (NPD) . He used to participate in lot of course and worked as a team leader for many institutional activities . He is one of the Active member in Institutional Training and Research incubation Center (TRIC). I enjoyed his company as he is so encouraging and motivational guy who can inspire by aspiring. ",
@@ -21,7 +23,8 @@ export const data = [
   },
   {
     testimonial: {
-      testimonial_image: "./assets/avatar3.jpeg",
+      testimonial_image:
+        "https://lh3.googleusercontent.com/pw/ADCreHfybZ5YCQSE2YlKmwFIzMPb6OfU3rJ5cVWNUT9saSnpS7smXlf5i78vH-xBXqeFavwZe2nH4ElKsT-iYOaJ6zgPEZF4QqARQqHPztGJZlmBaadUN1r5h8gsrgbbFQWk7SGbXQnulX6f2TSZrkeo-jKuFQ=w100-h100-s-no-gm?authuser=0",
       provider_name: "Mohammed Huzaifa",
       review:
         "Arshath Ameen is known for his intelligence and consistency with lots of intensity. Due to the above fact, he manages to learn new things quickly and thoroughly.",
@@ -31,7 +34,8 @@ export const data = [
   },
   {
     testimonial: {
-      testimonial_image: "./assets/avatar2.jpeg",
+      testimonial_image:
+        "https://lh3.googleusercontent.com/pw/ABLVV86mpNGu6axY5z-HOer16Lne3vS7iExFa5MhXe0Y41mlGC_yrHBwh6BYz833JqRCwz7SnpdnXyzawxNBnNMfQxHeVY-Yo7eygQ1CnomRZNo6fuUBNa5YYxWazKsEV_qOtXHKIP-xFF1MnwD2z4AGY7hwDw=w100-h100-s-no-gm?authuser=0",
       provider_name: "Faijal Risvan",
       review:
         "He is Punctual and Hardworker. He also has lot of technical knowledge. Helping tenancy, Respectful and Kind hearted person.",
@@ -97,10 +101,10 @@ export const data = [
   {
     portfolio: {
       portfolio_image:
-        "https://i.pinimg.com/564x/db/0b/50/db0b509b4cd641f2145d4c01f95883dc.jpg",
-      title: "Simplify URL",
-      GitLink: "https://github.com/Ameen-Works/shorten-url",
-      DemoLink: "https://simply-url-aw.netlify.app/",
+        "https://i.pinimg.com/564x/2e/83/d0/2e83d0cd7340276a61f2f2bb7dea56c3.jpg",
+      title: "Stack-Overflow Clone",
+      GitLink: "https://github.com/Ameen-Works/stackoverflow-clone-fe",
+      DemoLink: "https://stackoverflow-clone-aw.netlify.app/",
     },
     _id: "6521074b88dda6fa61713d7d",
     __v: 0,

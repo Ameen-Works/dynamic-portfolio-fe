@@ -31,7 +31,7 @@ const Portfolio = ({ data, loading }) => {
             })
             .map((dataObj) => {
               return (
-                <article className="portfolio__item">
+                <article className="portfolio__item" key={dataObj._id}>
                   <div className="portfolio__item-image">
                     <img src={dataObj.portfolio.portfolio_image} alt="Test1" />
                   </div>
